@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .card {
@@ -29,8 +30,14 @@ img {
   margin-bottom: 15px;
 }
 
+h1 {
+  margin: 10px 0 5px;
+}
+
 h2 {
-  margin: 5px 0;
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #cbd5e1;
 }
 
 p {
@@ -68,7 +75,6 @@ button:hover {
 
 <button onclick="showMessage()">Say Hi</button>
 <button onclick="visitGithub()">My GitHub</button>
-
 </div>
 
 <script>
@@ -78,34 +84,6 @@ function showMessage() {
 
 function visitGithub() {
   window.location.href = "https://github.com";
-}
-</script>
-
-</body>
-</html>  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #14b8a6;
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="card">
-<img src="https://i.imgur.com/6VBx3io.png">
-<h1>Welcome to my website 🚀</h1>
-<p>I am learning coding on GitHub.</p>
-<button onclick="showMessage()">Click Me</button>
-</div>
-
-<script>
-function showMessage() {
-  alert("You're becoming a web developer Daniel 😎");
 }
 </script>
 
