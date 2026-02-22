@@ -8,16 +8,24 @@ body {
   background: #0f172a;
   color: white;
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #111827;
+  padding: 40px;
+  border-radius: 15px;
   text-align: center;
-  padding-top: 80px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
-h1 {
-  font-size: 32px;
-}
-
-p {
-  color: #cbd5e1;
+img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 button {
@@ -27,6 +35,12 @@ button {
   color: white;
   font-size: 16px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #14b8a6;
 }
 </style>
 
@@ -34,14 +48,16 @@ button {
 
 <body>
 
-<h1>Welcome to my first website 🚀</h1>
+<div class="card">
+<img src="https://i.imgur.com/6VBx3io.png">
+<h1>Welcome to my website 🚀</h1>
 <p>I am learning coding on GitHub.</p>
-
 <button onclick="showMessage()">Click Me</button>
+</div>
 
 <script>
 function showMessage() {
-  alert("You clicked the button! Nice work Daniel 🎉");
+  alert("You're becoming a web developer Daniel 😎");
 }
 </script>
 
