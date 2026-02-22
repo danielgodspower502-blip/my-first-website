@@ -20,12 +20,21 @@ body {
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  max-width: 350px;
 }
 
 img {
   width: 120px;
   border-radius: 50%;
   margin-bottom: 15px;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+p {
+  color: #9ca3af;
 }
 
 button {
@@ -35,6 +44,45 @@ button {
   color: white;
   font-size: 16px;
   border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #14b8a6;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+<img src="https://i.imgur.com/6VBx3io.png">
+
+<h1>Daniel</h1>
+<h2>Beginner Web Developer</h2>
+
+<p>I’m learning HTML, CSS, and JavaScript.</p>
+
+<button onclick="showMessage()">Say Hi</button>
+<button onclick="visitGithub()">My GitHub</button>
+
+</div>
+
+<script>
+function showMessage() {
+  alert("Thanks for visiting my website!");
+}
+
+function visitGithub() {
+  window.location.href = "https://github.com";
+}
+</script>
+
+</body>
+</html>  border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
