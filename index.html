@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Business Website</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleaning Services</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+<header>
+    <div class="container">
         <h1>Cleaning Services</h1>
         <nav>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Home Cleaning</li>
-            <li>Office Cleaning</li>
-            <li>Window Cleaning</li>
-        </ul>
-    </section>
+<section id="services" class="container">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="images/home.jpg" alt="Home Cleaning">
+            <h3>Home Cleaning</h3>
+        </div>
+        <div class="card">
+            <img src="images/office.jpg" alt="Office Cleaning">
+            <h3>Office Cleaning</h3>
+        </div>
+        <div class="card">
+            <img src="images/window.jpg" alt="Window Cleaning">
+            <h3>Window Cleaning</h3>
+        </div>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@cleaning.com</p>
-        <p>Phone: 123-456-7890</p>
-    </section>
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p>Email: info@cleaning.com</p>
+    <p>Phone: 123-456-7890</p>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Cleaning Services</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Cleaning Services</p>
+</footer>
 </body>
 </html>
